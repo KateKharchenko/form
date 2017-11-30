@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,700');
+
+* {
+	box-sizing: border-box;
+}
+
+html, body {
+	min-height: 100%;
+}
+
+body {
+	background: #575c5e url(../img/bg.jpg) no-repeat center;
+	background-size: cover;
+	font: 400 14px 'Montserrat', sans-serif;
+	color: #637570;
+}
+
+.wrap {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	width: 340px;
+	height: 530px;
+	background: #fff;
+}
+
+.header {
+	background: #eee4a9;
+	padding: 20px 25px;
+}
+
+.header::before,
+.header::after {
+	content: '';
+	display: table;
+}
+
+.header::after {
+	clear: both;
+}
+
+.price {
+	font-size: 36px;
+	font-weight: 500;
+	float: right;
+	line-height: 1;
+	margin-left: 10px;
+}
+
+.price::before {
+	content: attr(data-currency);
+}
+
+.title {
+	margin: 5px 0 0;
+	font-size: 14px;
+	word-break: break-all;
+}
+
+.subtitle {
+	font-size: 10px;
+	text-transform: uppercase;
+	opacity: .6;
+}
+
+.form {
+	padding: 20px 25px;
+}
+
+.form__group {
+	border: 0;
+	margin: 25px 0 0;
+	padding: 0;
+}
+
+.form__label {
+	display: block;
+	margin-bottom: 5px;
+}
+
+.form__field {
+	padding: 15px 10px;
+	width: 100%;
+	display: inline-block;
+	border: 1px solid #637570;
+}
+
+.form__field::placeholder {
+	opacity: .6;
+}

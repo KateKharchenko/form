@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	<title></title>
+	<link rel="shortcut icon" href="favicon.png">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+	<div class="wrap">
+		<header class="header">
+			<div class="price" data-currency="$">88</div>
+			<h1 class="title">Harold Finch</h1>
+			<span class="subtitle">Your Total</span>
+		</header>
+		<form action="" class="form">
+			<fieldset class="form__group">
+				<label for="number" class="form__label">Credit card number</label>
+				<input type="text" name="number" id="number" class="form__field" placeholder="XXXX XXXX XXXX XXXX">
+			</fieldset>
+			<fieldset class="form__group">
+				<label for="month" class="form__label">Expiration date</label>
+				<select name="month" id="month" class="form__field">
+					<option value="">Month</option>
+					<option value="0">January</option>
+					<option value="1">February</option>
+				</select>
+				<select name="year" id="year" class="form__field">
+					<option value="">Year</option>
+					<option value="2017">2017</option>
+					<option value="2018">2018</option>
+				</select>
+			</fieldset>
+			<fieldset class="form__group">
+				<label for="cvv" class="form__label">CVV</label>
+				<input type="password" name="cvv" id="cvv" class="form__field">
+			</fieldset>
+		</form>
+	</div>
+</body>
+</html>
